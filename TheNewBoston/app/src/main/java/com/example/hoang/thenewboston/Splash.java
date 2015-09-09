@@ -11,6 +11,7 @@ public class Splash extends AppCompatActivity {
     MediaPlayer ourSong;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
         ourSong = MediaPlayer.create(Splash.this,R.raw.equinox);
