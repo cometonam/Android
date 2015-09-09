@@ -17,6 +17,7 @@ public class ListMenu extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        
         setListAdapter(new ArrayAdapter<String>(ListMenu.this,android.R.layout.simple_list_item_1,classes));
     }
 
