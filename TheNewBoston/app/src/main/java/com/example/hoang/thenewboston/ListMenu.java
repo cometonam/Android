@@ -21,8 +21,23 @@ public class ListMenu extends ListActivity {
 
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
+        Intent intent = null;
+        switch (position)
+        {
+            case 0:
+                intent = new Intent(ListMenu.this, StartingPoint.class);
+                break;
+            case 1:
+                intent = new Intent(ListMenu.this, StartingPoint.class);
+                break;
+            case 2:
+                intent = new Intent(ListMenu.this, StartingPoint.class);
+                break;
+        }
+
         super.onListItemClick(l, v, position, id);
-        Intent startingPoint= new Intent(ListMenu.this, StartingPoint.class);
-        startActivity(startingPoint );
+        //Intent startingPoint= new Intent(ListMenu.this, StartingPoint.class);
+        //startActivity(startingPoint );
+        startActivity(intent );
     }
 }
